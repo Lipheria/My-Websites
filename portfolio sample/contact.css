@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif; 
+ }
+
+ body{
+    background:#1c2834;
+ }
+
+header{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #e7eafb; */
+    padding: 18px 80px;
+}
+
+ .logo{
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #01a29c;
+    text-decoration: none;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar li{
+    list-style: none;
+}
+
+.navbar li a{
+    font-size: 1rem;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #01a29c;
+    font-weight: 500;
+}
+
+header .navbar li a:hover{
+    background: #01a29c;
+    color: white;
+    border-radius: 5px;
+}
+
+#menu-icon{
+    font-size: 2rem;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.contact{
+    padding: 120px 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .content{
+    justify-content: left;
+    align-items: left;
+    max-width: 800px;
+    text-align: left;
+    padding-left: 6%;
+}
+
+.contact .content h2{
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+}
+
+.contact .content p{
+    font-weight: 300;
+    color: white;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    transform: translateY(-25px);
+}
+
+.container .contactInfo .box .icon{
+    color: white;
+    font-size: 22px;
+}
+
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: white;
+    flex-direction: column;
+    font-weight: 300;
+} 
+
+.container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #01a29c;
+}
+
+.contactForm{
+    width: 40%;
+    padding: 40px;
+}
+
+.contactForm h2{
+    font-size: 30px;
+    color: #01a29c;
+}
+
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input, textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+}
+
+input, select, textarea{
+    color: white;
+}
+
+input[type="text"], textarea {
+
+    background-color : #1c2834;
+  
+  }
+
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: #01a29c;
+    color: white;
+    cursor: pointer;
+    border-radius: 5%;
+} 
+
+@media (max-width: 991px){
+    .contact{
+        padding: 50px;
+    }
+
+    .contact .content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .container .contactInfo{
+        flex-direction: row;
+        padding: 20px 50px;
+        justify-content: center;
+    }
+
+    .container .contactInfo, .contactForm{
+        width: 75%;
+    }
+
+    .contactForm h2{
+        text-align: center;
+
+    }
+
+    #menu-icon{
+        visibility: visible;
+        color: #01a29c;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .logo{
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #01a29c;
+        text-decoration: none;
+       
+    }
+
+    header{
+
+        padding: 10px 70px;
+        background-color: #e7eafb;;
+    }
+
+    header .navbar{
+        display: none;
+    }
+
+    header .navbar.active{
+        visibility: visible;
+        width: 100%;
+        height: calc(100% - 50px);
+        position: fixed;
+        top: 50px;
+        left: 0;
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: white;
+        z-index: 100;
+    }
+
+    header .navbar li{
+        margin-left: 0;
+        background: white;
+    }
+
+    header .navbar li a{
+        color: #111;
+        font-size: 1.6em;
+    }
+
+    
+    header .navbar.active li a:hover{
+        background: none;
+        color: #01a29c;
+    }
+}
+

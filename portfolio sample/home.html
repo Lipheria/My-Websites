@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="https://kit.fontawesome.com/ae95a29147.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Navbar-->
+    <header>
+        <a href="home.html" class="logo">Cheese.</a>
+        <div id="menu-icon" onclick="onToggle()" class="fas fa-bars"></div>
+        <ul class="navbar">
+            <li><a href="">Home</a></li>
+            <li><a href="#education">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <!--Intro Text-->
+    <div class="textbox">
+        <h1>Hi i'm <span>Bob</span></h1>
+        <p>I'm a Web Developer</p>
+        <p>Welcome to my portfolio. Have a look around for
+            <br>My works 
+        </p>
+        <a href="">Check out my CV</a>
+    </div>
+
+    <!--Image & Socials-->
+    <div class="img-box">
+        <img src="images/blob.svg" class="shape" alt="">
+        <img src="images/girl.png" class="girl" alt="">
+         <!--Social Links-->
+        <ul class="sci">
+            <li><a href=""><i class="fab fa-facebook"></i></a></li>
+            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </div>
+
+    <!--Skills-->
+    <section class="skills" id="skills">
+        <div class="heading">
+            <h1>Skills</h1>
+        </div>
+        <div class="skills-content">
+            <div class="skills-bars">
+                <div class="skills-text">
+                    <h2>My Skills</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi accusantium, labore hic quia enim magni autem quae cum, minus vitae asperiores. Sapiente consequatur culpa, nisi aut nostrum magnam laudantium consectetur.</p>
+                </div>
+                <div class="skills-box">
+                    <i class="fab fa-html5"><h3>HTML</h3></i>
+                    <span>94%</span>
+                    <div class="percent-bar html-bar"></div>
+                </div>
+                <div class="skills-box">
+                    <i class="fab fa-css3"><h3>CSS</h3></i>
+                    <span>84%</span>
+                    <div class="percent-bar css-bar"></div>
+                </div>
+                <div class="skills-box">
+                    <i class="fab fa-js"><h3>Javascript</h3></i>
+                    <span>65%</span>
+                    <div class="percent-bar js-bar"></div>
+                </div>
+                <div class="skills-box">
+                    <i class="fas fa-palette"><h3>UI/UX</h3></i>
+                    <span>80%</span>
+                    <div class="percent-bar ux-bar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Education-->
+    <section class="education" id="education">
+        <div class="heading">
+            <h1>Education</h1>
+        </div>
+        <div class="timeline">
+            <div class="container left">
+              <div class="content">
+                <h2>2011-2013</h2>
+                <p>Middle School</p>
+              </div>
+            </div>
+            <div class="container right">
+              <div class="content">
+                <h2>2013-2016</h2>
+                  <p>High School</p>
+              </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                  <h2>2017-2020</h2>
+                  <p>University</p>
+                </div>
+            </div>   
+        </div>
+    </section>
+  
+
+
+    <script>
+        const menu= document.getElementById("menu-icon");
+        const navbar = document.querySelector(".navbar")
+         function onToggle(){
+            menu.classList.toggle("fa-times")
+            navbar.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
